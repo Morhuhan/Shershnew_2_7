@@ -1,0 +1,1 @@
+"main.exe" "from.txt" "/A" "to.txt"
