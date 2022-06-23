@@ -1,1 +1,1 @@
-"main.exe" "from.txt" "/A" "to.txt"
+main.exe from.jpg /A to.txt

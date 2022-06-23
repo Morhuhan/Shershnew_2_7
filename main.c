@@ -1,3 +1,6 @@
+//main.exe from.txt /A to.txt  - для текстовых
+//main.exe from.jpg /B to.jpg  - для всех
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -47,6 +50,9 @@ void main(int argc, char* argv[]) {
     }
 
     else if (strcmp(argv[2], "/B") == 0) {
+
+        from = fopen(argv[1], "rb");
+        to = fopen(argv[3], "wb");
 
         if (fopen(argv[1], "rb") == NULL) {
             printf("Directory 1 does not exist");
